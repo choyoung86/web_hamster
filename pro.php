@@ -57,6 +57,7 @@
             </fieldset>
         </form>
         </div>
+
         <div id="d">
         <form>
             <fieldset class="f2">
@@ -103,6 +104,7 @@
             </fieldset>
         </form>
     </div>
+    
     <div id="d">
         <form>
             <fieldset class="f2">

@@ -5,15 +5,15 @@
 	<title>해씨별</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <link rel="stylesheet" type="text/css" href="./css/style1.css">
+    <link rel="stylesheet" type="text/css" href="./css/style1.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body>
         <header>
             <?php include "header.php"?>
         </header>
-        <form name="category2-2" method="post" action="buy.php" enctype="multipart/form-data">
-       <div id="center">
+            <form name="category2-2" method="post" action="buy.php" enctype="multipart/form-data">
+    <div id="center">
    <div class="product_view">
         <h2>189L 리빙 하우스 </h2>
         <table>

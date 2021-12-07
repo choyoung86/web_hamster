@@ -1,41 +1,45 @@
 <?php
+    //구매기록 들어갈때 세션 스타트 에러 무시
     error_reporting(E_ALL);
     ini_set("display_errors", 0);
+
+
     session_start();
     if (isset($_SESSION["userid"])) $userid = $_SESSION["userid"];
     else $userid = "";
     if (isset($_SESSION["username"])) $username = $_SESSION["username"];
     else $username = "";
-    if (isset($_SESSION["userpoint"])) $userpoint = $_SESSION["userpoint"];
-    else $userpoint = "";
 ?>
 
 
  <hr cla>
      <div class="topbox">
         <div>
-<?php
-    if(!$userid) {
-?>
+            <?php
+                if(!$userid) {
+            ?>
+
             &nbsp;<a href="login_form.php">LOGIN</a>
             &nbsp;<a href="member_form.php">JOIN</a> &nbsp; 
             &nbsp;<a href="notice_list.php">NOTICE</a> &nbsp; 
             &nbsp;<a href="qna_list.php">Q&A</a> &nbsp;
             &nbsp;<a href="review_list.php">REVIEW</a> &nbsp;
-<?php
-    } else {
-        $logged = $username."(".$userid.")님";
-?>
-             &nbsp;<?=$logged?> &nbsp;
+            <?php
+              } else {
+                    $logged = $username."(".$userid.")님";
+            ?>
+            
+            &nbsp;<?=$logged?> &nbsp;
             &nbsp;<a href="logout.php">LOGOUT</a> &nbsp;
             &nbsp;<a href="member_modify_form.php">MYPAGE</a> &nbsp;
             &nbsp;<a href="shopping.php">ORDER</a> &nbsp;
             &nbsp;<a href="notice_list.php">NOTICE</a> &nbsp; 
             &nbsp;<a href="qna_list.php">Q&A</a> &nbsp;
             &nbsp;<a href="review_list.php">REVIEW</a> &nbsp;
-<?php
-    }
-?>
+            
+            <?php
+                }
+            ?>
         </div>
   	</div>
 

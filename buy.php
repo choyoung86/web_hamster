@@ -22,9 +22,7 @@ if ( !$userid )
 
 
 
-    $title = date("Ymd") ."_". substr(md5(microtime().mt_rand(1000,2000)),0,6); // 날짜_랜덤 숫자, 알파벳
-
-
+    $title = date("Ymd") ."_". substr(md5(microtime().mt_rand(1000,2000)),0,6); // 날짜_랜덤 숫자, 알파벳 랜덤 생성
     $regist_day = date("Y-m-d (H:i)");
     
     $con = mysqli_connect("localhost", "root", "", "hamster");
