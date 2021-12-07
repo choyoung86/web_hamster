@@ -9,7 +9,6 @@ h3 {
 #close {
    margin:20px 0 0 80px;
    cursor:pointer;
-   
 }
 ul { list-style-type: none; }
 li {list-style-type: none;}
